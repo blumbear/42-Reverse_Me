@@ -12,7 +12,7 @@ Organisation:
 - Le sujet est disponible dans `en.subject.pdf`.
 
 Utilisation rapide:
-- Décompressez l’archive `binary.tgz` dans `binary/` (voir [Décompression des binaires](#décompression-des-binaires))
+- Décompressez l’archive `binary.tgz` dans `binary/` (voir [Décompression des binaires](#Décompression-des-binaires))
 - Lancez les binaires ou inspectez-les (strings, objdump, gdb, etc.).
 - Déduisez le mécanisme de vérification et le mot de passe.
 - Placez/récupérez le mot de passe dans `levelX/password`.
