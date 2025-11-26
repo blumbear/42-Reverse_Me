@@ -1,30 +1,30 @@
 # Reverse Me
 
-Projet de reverse engineering en 3 niveaux. L’objectif est de:
-- Analyser et « reverse » chaque binaire/exercice.
-- Trouver le mot de passe associé à chaque niveau.
-- Recoder la logique en C une fois comprise.
+Project overview:
+- Reverse engineer each binary/exercise.
+- Find the password for each level.
+- Re-implement the logic in C once understood.
 
-### Organisation:
-- `binary/level1`, `binary/level2`, `binary/level3`: binaires.
-- Les mots de passe sont dans `levelX/password` (par exemple `level1/password`).
-- Une reproduction en C se trouve dans `level1/source.c`.
-- Le sujet est disponible dans `en.subject.pdf`.
+### Organization:
+- `binary/level1`, `binary/level2`, `binary/level3`: binaries.
+- Passwords are in `levelX/password` (e.g., `level1/password`).
+- A C reimplementation is in `level1/source.c`.
+- The brief is available in `en.subject.pdf`.
 
-### Utilisation rapide:
-- Décompressez l’archive `binary.tgz` dans `binary/` (voir [Décompression des binaires](#decompression-des-binaires))
-- Lancez les binaires ou inspectez-les (strings, objdump, gdb, etc.).
-- Déduisez le mécanisme de vérification et le mot de passe.
-- Placez/récupérez le mot de passe dans `levelX/password`.
-- Recodez la vérification en C puis compilez.
+### Quick start:
+- Extract the `binary.tgz` archive into `binary/` (see [Binary extraction](#binary-extraction))
+- Run or inspect the binaries (strings, objdump, gdb, etc.).
+- Deduce the verification mechanism and the password.
+- Put/read the password in `levelX/password`.
+- Recode the verification in C and compile.
 
-<a id="decompression-des-binaires"></a>
-### Decompression des binaires
-- Le fichier `binary.tgz` contient les trois niveaux de binaires.
-- Pour extraire dans le dossier `binary/`:
-  - Assurez-vous que le dossier existe: `mkdir -p binary`
-  - Extrayez l’archive: `tar -xzf binary.tgz -C binary/`
-- Après extraction, vous devriez avoir `binary/level1`, `binary/level2`, `binary/level3`.
+<a id="binary-extraction"></a>
+### Binary extraction
+- The `binary.tgz` file contains the three binary levels.
+- To extract into the `binary/` folder:
+  - Ensure the folder exists: `mkdir -p binary`
+  - Extract the archive: `tar -xzf binary.tgz -C binary/`
+- After extraction, you should have `binary/level1`, `binary/level2`, `binary/level3`.
 
-Objectif final:
-- Obtenir les 3 mots de passe et une implémentation C fonctionnelle pour chaque niveau.
+### Final objective:
+- Obtain the three passwords and a working C implementation for each level.
