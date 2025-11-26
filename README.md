@@ -5,20 +5,20 @@ Projet de reverse engineering en 3 niveaux. L’objectif est de:
 - Trouver le mot de passe associé à chaque niveau.
 - Recoder la logique en C une fois comprise.
 
-Organisation:
+### Organisation:
 - `binary/level1`, `binary/level2`, `binary/level3`: binaires.
 - Les mots de passe sont dans `levelX/password` (par exemple `level1/password`).
 - Une reproduction en C se trouve dans `level1/source.c`.
 - Le sujet est disponible dans `en.subject.pdf`.
 
-Utilisation rapide:
-- Décompressez l’archive `binary.tgz` dans `binary/` (voir [Décompression des binaires](#Décompression-des-binaires))
+### Utilisation rapide:
+- Décompressez l’archive `binary.tgz` dans `binary/` (voir [Décompression des binaires](#Decompression-des-binaires))
 - Lancez les binaires ou inspectez-les (strings, objdump, gdb, etc.).
 - Déduisez le mécanisme de vérification et le mot de passe.
 - Placez/récupérez le mot de passe dans `levelX/password`.
 - Recodez la vérification en C puis compilez.
 
-Décompression des binaires:
+### Decompression des binaires:
 - Le fichier `binary.tgz` contient les trois niveaux de binaires.
 - Pour extraire dans le dossier `binary/`:
   - Assurez-vous que le dossier existe: `mkdir -p binary`
