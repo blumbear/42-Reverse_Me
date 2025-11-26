@@ -12,13 +12,14 @@ Projet de reverse engineering en 3 niveaux. L’objectif est de:
 - Le sujet est disponible dans `en.subject.pdf`.
 
 ### Utilisation rapide:
-- Décompressez l’archive `binary.tgz` dans `binary/` (voir [Décompression des binaires](#Decompression-des-binaires))
+- Décompressez l’archive `binary.tgz` dans `binary/` (voir [Décompression des binaires](#decompression-des-binaires))
 - Lancez les binaires ou inspectez-les (strings, objdump, gdb, etc.).
 - Déduisez le mécanisme de vérification et le mot de passe.
 - Placez/récupérez le mot de passe dans `levelX/password`.
 - Recodez la vérification en C puis compilez.
 
-### Decompression des binaires:
+<a id="decompression-des-binaires"></a>
+### Decompression des binaires
 - Le fichier `binary.tgz` contient les trois niveaux de binaires.
 - Pour extraire dans le dossier `binary/`:
   - Assurez-vous que le dossier existe: `mkdir -p binary`
