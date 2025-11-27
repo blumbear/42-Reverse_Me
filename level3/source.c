@@ -1,5 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
+
+int ___syscall_malloc() {
+	puts("Nope.");
+	exit(1);
+}
+
+void ____syscall_malloc() {
+	puts("Good job.");
+}
 
 int main() {
 	char buff[24];
@@ -9,11 +19,11 @@ int main() {
 	printf("Please enter key: ");
 	int tmp = scanf("%23s", buff);
 	if (tmp != 1)
-		no();
+		___syscall_malloc();
 	if (buff[1] != '2')
-		no();
+		___syscall_malloc();
 	if (buff[0] != '4')
-		no();
+		___syscall_malloc();
 	
 	/*
 		0x000055555555537b <+91>:	movsx  ecx,BYTE PTR [rbp-0x40]
@@ -26,7 +36,7 @@ int main() {
 		0x000055555555539b <+123>:	call   0x555555555080 <fflush@plt>
 	*/
 	memset(res, 0, 9);
-	res[j++] = '*';
+	res[j++] = 42;
 	for (int i = 2; buff[i]; i+=3) {
 		tmp = strlen(res);
 		if (tmp >= 8)
@@ -58,5 +68,7 @@ int main() {
 		res[j++] = tmp;
 	}
 	if (strcmp(res, "********") != 0)
-		return (0);
+		___syscall_malloc();
+	____syscall_malloc();
+	return (0);
 }

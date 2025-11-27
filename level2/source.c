@@ -26,7 +26,6 @@ int main() {
 	if (buff[0] != '0')
 		no();
 
-	write(1, "here\n", 5);
 	//fflush()
 	memset(res, 0, 9);
 	res[j++] = 'd';
@@ -60,7 +59,8 @@ int main() {
 		tmp = atoi(temp);
 		res[j++] = tmp;
 	}
-	if (res != "delabere")
+	if (strcmp(res, "delabere") != 0)
 		no();
+	ok();
 	return (0);
 }
