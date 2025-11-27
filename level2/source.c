@@ -19,7 +19,6 @@ int main() {
 
 	printf("Please enter key: ");
 	int tmp = scanf("%23s", buff);
-	printf("%s\n", buff);
 	if (tmp != 1)
 		no();
 	if (buff[1] != '0')
